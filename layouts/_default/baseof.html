@@ -1,10 +1,19 @@
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+<!DOCTYPE html>
+<html lang="{{$.Site.LanguageCode | default " en " }}">
+
+<head>
+  {{ partial "meta.html" . }}
+  <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+</head>
+
+<body>
+  {{ block "header" . }}{{end}}
+
+  <main class="wrapper" role="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ block "footer" . }}{{end}}
+</body>
+
 </html>
