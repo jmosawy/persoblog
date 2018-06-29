@@ -1,0 +1,23 @@
+{
+  "name": "persoblog",
+  "version": "1.0.0",
+  "description": "Personal website theme for Hugo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmosawy/persoblog.git"
+  },
+  "author": {
+    "name": "Jeff Mosawy",
+    "email": "jmosawy@gmail.com",
+    "url": "https://jmosawy.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmosawy/persoblog/issues"
+  },
+  "homepage": "https://github.com/jmosawy/persoblog#readme"
+}
