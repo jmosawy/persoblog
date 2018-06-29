@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/jmosawy/persoblog/issues"
   },
-  "homepage": "https://github.com/jmosawy/persoblog#readme"
+  "homepage": "https://github.com/jmosawy/persoblog#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
