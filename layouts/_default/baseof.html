@@ -2,17 +2,18 @@
 <html lang="{{$.Site.LanguageCode | default " en " }}">
 
 <head>
-  {{ .Hugo.Generator }}
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  {{ partial "meta.html" . }}
   <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
 </head>
 
 <body>
-  <main role="main">
+  {{ block "header" . }}{{end}}
+
+  <main class="wrapper" role="main">
     {{ block "main" . }}{{ end }}
   </main>
+
+  {{ block "footer" . }}{{end}}
 </body>
 
 </html>
