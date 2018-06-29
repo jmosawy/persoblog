@@ -2,8 +2,9 @@
 <html lang="{{$.Site.LanguageCode | default " en " }}">
 
 <head>
-  {{ partial "meta.html" . }}
+  {{ partial "head/meta.html" . }}
   <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+  {{ partial "head/other.html" . }}
 </head>
 
 <body>

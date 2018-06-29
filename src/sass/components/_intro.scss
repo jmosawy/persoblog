@@ -1,0 +1,20 @@
+.intro {
+  text-align: center;
+
+  &__title,
+  &__tagline {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+
+  &__title {
+    color: $title-color;
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+  &__tagline {
+    color: $text-color;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+}
