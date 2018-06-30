@@ -22,7 +22,9 @@
   "homepage": "https://github.com/jmosawy/persoblog#readme",
   "devDependencies": {
     "autoprefixer": "^8.6.4",
+    "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
+    "gulp-header": "^2.0.5",
     "gulp-postcss": "^7.0.1",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4"
