@@ -10,6 +10,10 @@ gulp.task('sass', () => {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dist'));
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./static/css'));
+});
+
+gulp.task('default', () => {
+  gulp.watch('./src/sass/**/*.scss', ['sass'])
 });
