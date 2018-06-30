@@ -7,9 +7,21 @@
   margin: 0;
 
   &>li {
+    position: relative;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     padding: 0 16px;
+
+    &:not(:last-child):after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background-color: $primary-color;
+      border-radius: 100%;
+      top: 6px;
+      right: -3px;
+    }
   }
 
   a {
